@@ -5,7 +5,8 @@ module.exports = autoHeadingIds
 var deafultPrefix = 'id'
 
 function autoHeadingIds(options) {
-  var prefix = options.prefix || deafultPrefix
+  var settings = options || {}
+  var prefix = settings.prefix || deafultPrefix
   return transformer
 
   function transformer(ast) {
