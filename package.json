@@ -1,0 +1,28 @@
+{
+  "name": "remark-heading-autoid",
+  "version": "1.0.0",
+  "description": "Remark plugin to support headings auto ids",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iloveip/remark-heading-autoid.git"
+  },
+  "keywords": [
+    "remark",
+    "heading",
+    "id",
+    "auto"
+  ],
+  "author": "Svetlana Malakhova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iloveip/remark-heading-autoid/issues"
+  },
+  "homepage": "https://github.com/iloveip/remark-heading-autoid#readme",
+  "dependencies": {
+    "unist-util-visit": "^2.0.2"
+  }
+}
