@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1592240553218" clover="3.2.0">
-  <project timestamp="1592240553218" name="All files">
+<coverage generated="1592241642923" clover="3.2.0">
+  <project timestamp="1592241642923" name="All files">
     <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3" elements="23" coveredelements="23" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
     <file name="index.js" path="/Users/svetlana/Desktop/remark-heading-autoid/index.js">
       <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
