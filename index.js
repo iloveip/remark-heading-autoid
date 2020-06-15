@@ -2,21 +2,24 @@ var visit = require('unist-util-visit')
 
 module.exports = autoHeadingIds
 
-function autoHeadingIds() {
+var deafultPrefix = 'id'
+
+function autoHeadingIds(options) {
+  var prefix = options.prefix || deafultPrefix
   return transformer
-}
 
-function transformer(ast) {
-  var count = 1
+  function transformer(ast) {
+    var count = 1
 
-  visit(ast, 'heading', visitor)
+    visit(ast, 'heading', visitor)
 
-  function visitor(node) {
-    var data = node.data || (node.data = {})
-    var props = data.hProperties || (data.hProperties = {})
+    function visitor(node) {
+      var data = node.data || (node.data = {})
+      var props = data.hProperties || (data.hProperties = {})
 
-    props.id = 'id' + String(count)
+      props.id = prefix + String(count)
 
-    count++
+      count++
+    }
   }
 }
