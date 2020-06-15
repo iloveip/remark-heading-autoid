@@ -4,7 +4,7 @@
   "description": "Remark plugin to support headings auto ids",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,12 @@
   "homepage": "https://github.com/iloveip/remark-heading-autoid#readme",
   "dependencies": {
     "unist-util-visit": "^2.0.2"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "rehype-stringify": "^8.0.0",
+    "remark": "^12.0.0",
+    "remark-rehype": "^7.0.0"
   }
 }
