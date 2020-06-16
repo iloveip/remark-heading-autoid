@@ -56,7 +56,7 @@ describe("autoHeadingId", function () {
     expect(contents).toMatchInlineSnapshot(`
       "<h1 id=\\"id1\\">heading one</h1>
       <h2 id=\\"custom-id\\">heading two</h2>
-      <h2 id=\\"id3\\">heading three</h2>"
+      <h2 id=\\"id2\\">heading three</h2>"
     `);
   });
 });

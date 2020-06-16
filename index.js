@@ -23,10 +23,6 @@ function autoHeadingIds(options) {
       var data = node.data || (node.data = {})
       var props = data.hProperties || (data.hProperties = {})
 
-      props.id = prefix + String(count)
-
-      count++
-
       let lastChild = node.children[node.children.length - 1]
 
       if (lastChild && lastChild.type === 'text') {
@@ -41,6 +37,10 @@ function autoHeadingIds(options) {
             string = string.substring(0, matched.index)
             lastChild.value = string
           }
+        } else {
+          props.id = prefix + String(count)
+
+          count++
         }
       }
     }
