@@ -1,6 +1,6 @@
 {
   "name": "remark-heading-autoid",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Remark plugin to support headings auto ids",
   "main": "index.js",
   "scripts": {
