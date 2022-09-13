@@ -2,6 +2,7 @@
 node_modules/
 dist/
 public/
+package-lock.json
 
 # Ignore test-related files
 coverage/
